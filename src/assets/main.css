@@ -1,0 +1,83 @@
+a {
+  font-weight: 500;
+  color: #008080; 
+  text-decoration: none;
+}
+a:hover {
+  color: #006666; 
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-image: url(https://i.pinimg.com/564x/ea/d8/47/ead84737811b6d2dd7b22a4b295b11fe.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-position: center; 
+  font-family: Arial, sans-serif; 
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  color: #008080;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+
+button {
+  border-radius: 8px;
+  border: none; 
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: Arial, sans-serif; 
+  background-color: #008080; 
+  color: #fff; 
+  cursor: pointer;
+  transition: background-color 0.25s; /* Transisi perubahan warna tombol */
+}
+button:hover {
+  background-color: #006666; /* Warna tosca lebih gelap saat hover */
+}
+button:focus,
+button:focus-visible {
+  outline: none; /* Menghapus outline saat focus */
+}
+
+.card {
+  padding: 2em;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan yang lebih menonjol */
+  transition: transform 0.3s ease; /* Transisi saat hover */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Efek naik sedikit saat hover */
+}
+
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+    color: #000; 
+  }
+}
